@@ -1,0 +1,32 @@
+.container{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 300px;
+
+    background-color: #d46969;
+}
+
+.item2{
+    background-color: antiquewhite;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center ;
+    height: 50px;
+  }
+
+header{
+    display:grid;
+    grid-template-rows: 100px;
+    background-color: #755c5c;
+}
+
+footer{
+    display:grid;
+    grid-template-rows: 100px;
+    background-color: #755c5c;
+}
