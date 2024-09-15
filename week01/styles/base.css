@@ -1,0 +1,39 @@
+.container{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 300px;
+
+    background-color: #b8ccec;
+}
+
+.card{
+    background-color: rgb(105, 164, 170);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    margin: 2px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center ;
+    height: 50px;
+    background-color: rgb(242, 240, 238);
+    
+  }
+
+h2{
+    display:grid;
+    grid-template-rows: 100px;
+    background-color: #4893e2;
+    align-items:center;
+    justify-content: space-around;
+}
+
+footer{
+    display:grid;
+    grid-template-rows: 100px;
+    background-color: #4893e2;
