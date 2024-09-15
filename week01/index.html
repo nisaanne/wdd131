@@ -29,8 +29,18 @@
     </div>
     </main>
 <footer>
-    <p>The current year is <span id="current-year"></span>.</p>
+    <p>&copy; <span id="current-year"></span>
     <script src="scripts/getdates.js"></script>
+    Venisa McAllister
+    California, USA</p>
+    <h3>Last Modified Date</h3>
+    <p id="lastModified">
+
+    <script>
+        let lastModifiedDate = document.lastModified;
+        document.getElementById("lastModified").textContent = "This document was last modified on: " + lastModifiedDate;
+    </script></p>
+
 </footer>  
 </body>
 </html>
