@@ -34,10 +34,11 @@ nav a:hover{background-color: aqua;}
 nav a{color:black}
 
 img{float:left;
-    margin: 15px;
+    margin: 15px;}
        
+.hobby{float:right;
+    margin: 20px;}    
      
-    } 
 
 h2{
     display:grid;
@@ -52,6 +53,8 @@ footer{
     grid-template-rows: 20px;
     background-color: #4893e2;
     justify-content: center;}
+
+p{padding:5px;}
    
     
 
