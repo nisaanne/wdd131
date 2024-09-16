@@ -55,6 +55,9 @@ h1{
     justify-content: space-around;
 }
 
+h2{display:grid;
+    justify-content:center;}
+
 footer{
     display:grid;
     grid-template-rows: 20px;
