@@ -24,10 +24,11 @@ nav {
     justify-content: space-around;
     align-items:center ;
     height: 50px;
-    background-color: rgb(242, 240, 238);
+    background-color: rgb(242, 240, 238);}
     
-  }
+nav a:hover{background-color: aqua;}
 
+ 
 h2{
     display:grid;
     grid-template-rows: 100px;
