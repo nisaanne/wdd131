@@ -1,9 +1,12 @@
+
+
 .container{
     display:grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 300px;
 
     background-color: #b8ccec;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
 }
 
 .card{
@@ -35,5 +38,11 @@ h2{
 
 footer{
     display:grid;
-    grid-template-rows: 100px;
+    grid-template-rows: 20px;
     background-color: #4893e2;
+    justify-content: center;}
+   
+    
+
+
+
