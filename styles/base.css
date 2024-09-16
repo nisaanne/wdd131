@@ -1,4 +1,5 @@
 
+main{ max-width: max-content;}
 
 .container{
     
@@ -8,7 +9,7 @@
 
     background-color: rgb(105, 164, 170);
     font-family:Roboto, Arial, Helvetica, sans-serif;
-    max-width: max-content;
+   
     
 }
 
