@@ -31,9 +31,10 @@ nav {
     justify-content: space-around;
     align-items:center ;
     height: 50px;
-    background-color: rgb(242, 240, 238);
+    background-color: #4893e2;
     color:black;
-    width:100%}
+    width:100%;
+    margin: 0;}
 
 .resources{
     display:flex;
@@ -58,6 +59,7 @@ h1{
     background-color: #4893e2;
     align-items:center;
     justify-content: space-around;
+    margin: 0;
 }
 
 h2{display:grid;
