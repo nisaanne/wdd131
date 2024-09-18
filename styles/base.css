@@ -10,7 +10,7 @@ body{font-family: "Roboto", sans-serif;}
     grid-template-columns: 70% 30%;
     grid-template-rows: 400px;
 
-    background-color: rgb(105, 164, 170);
+    background-color: rgb(246, 249, 250);
     font-family:Roboto, Arial, Helvetica, sans-serif;
    
     
@@ -21,7 +21,7 @@ body{font-family: "Roboto", sans-serif;}
     border-width:2px;
     border-style:solid;
     border-color:black;
-    margin: 2px;
+    margin: 15px;
     width:90%;}
 
 
@@ -31,7 +31,7 @@ nav {
     justify-content: space-around;
     align-items:center ;
     height: 50px;
-    background-color: #4893e2;
+    background-color: #8f7e7e;
     color:black;
     width:100%;
     margin: 0;}
@@ -63,7 +63,10 @@ h1{
 }
 
 h2{display:grid;
-    justify-content:center;}
+    justify-content:center;
+    background-color:azure;
+    padding: 10px;
+    margin:0;}
 
 footer{
     display:grid;
