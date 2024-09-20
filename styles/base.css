@@ -28,7 +28,8 @@ body{font-family: "Roboto", sans-serif;}
     border-style:solid;
     border-color:black;
     margin: 15px;
-    width:90%;}
+    width:90%;
+    overflow: auto;}
 
 
 nav {
