@@ -43,7 +43,7 @@ body{font-family: "Roboto", sans-serif;}
 .resources{
     display:flex;
     flex-direction: column;
-    background-color: rgb(105, 164, 170);
+    /* background-color: rgb(105, 164, 170); */
     align-items: center;
 }
     
@@ -72,7 +72,8 @@ h1{
 
 h2{display:grid;
     justify-content:center;
-    background-color:azure;
+    /* background-color:azure; */
+    background-color:rgb(105, 164, 170);
     padding: 10px;
     margin:0;
 
