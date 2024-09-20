@@ -7,8 +7,9 @@ body{font-family: "Roboto", sans-serif;}
 .container{
     width: 90%;
     display:grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 400px;
+    /* grid-template-columns: 70% 30%; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 
     background-color: rgb(246, 249, 250);
     font-family:Roboto, Arial, Helvetica, sans-serif;
