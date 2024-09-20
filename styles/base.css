@@ -28,7 +28,7 @@ body{font-family: "Roboto", sans-serif;}
     }
 
 
-nav {
+.links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,11 +40,11 @@ nav {
     margin: 0;
     padding: 1rem}
 
-.resources{
+/* .resources{
     display:flex;
     flex-direction: column;
     background-color: rgb(105, 164, 170);
-}
+} */
     
 nav a:hover{background-color: aqua;}
 
