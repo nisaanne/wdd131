@@ -40,11 +40,12 @@ body{font-family: "Roboto", sans-serif;}
     margin: 0;
     padding: 1rem}
 
-/* .resources{
+.resources{
     display:flex;
     flex-direction: column;
     background-color: rgb(105, 164, 170);
-} */
+    align-items: center;
+}
     
 nav a:hover{background-color: aqua;}
 
