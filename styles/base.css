@@ -19,7 +19,7 @@ body{font-family: "Roboto", sans-serif;}
     overflow-wrap: break-word;
     padding: 1rem;
     margin: 0 auto;
-    overflow: auto;
+    overflow: scroll;
    }
 
 .card{
