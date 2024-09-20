@@ -63,7 +63,7 @@ h1{
     grid-template-rows: 100px;
     background-color: #4893e2;
     align-items:center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     font-size:1.2em;
     
