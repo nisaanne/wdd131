@@ -10,12 +10,11 @@ body{font-family: "Roboto", sans-serif;}
     /* grid-template-columns: 70% 30%; */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-
     background-color: rgb(246, 249, 250);
     font-family:Roboto, Arial, Helvetica, sans-serif;
-   
-    
-}
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+   }
 
 .card{
     background-color: rgb(105, 164, 170);
