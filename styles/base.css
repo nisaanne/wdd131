@@ -5,7 +5,7 @@ main{ max-width: max-content;}
 body{font-family: "Roboto", sans-serif;}
 
 .container{
-    
+    width: 90%;
     display:grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 400px;
