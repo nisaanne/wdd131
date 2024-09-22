@@ -1,0 +1,14 @@
+nav{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center ;
+    height: 50px;
+    background-color: #4870c5;
+    color:black;}
+
+nav a:hover{background-color: aqua;}
+
+nav a{color:black}
+
+main{width:100%}
+
