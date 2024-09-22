@@ -3,12 +3,36 @@ nav{display: flex;
     justify-content: space-around;
     align-items:center ;
     height: 50px;
-    background-color: #4870c5;
-    color:black;}
+    background-color: #853ed1;
+    color:white;
+    margin:0px;}
 
 nav a:hover{background-color: aqua;}
 
-nav a{color:black}
+nav a{color:white};
 
-main{width:100%}
+main{display:grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    justify-content: center;
+}
 
+h1{display:flex;
+justify-content: center;
+align-items: center;
+color:white;
+background-color:#853ed1;
+margin:0;}
+
+h2{display:flex;
+    justify-content: center;
+    align-items: center;}
+
+footer{background-color: #853ed1;
+    display:grid;
+    grid-template-rows: 20px;
+    justify-content: center;}
+    
+
+img{width:30%;
+margin:1em;}
