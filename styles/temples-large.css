@@ -2,7 +2,9 @@
     main {
     img{width: 30%;}
     grid-template-columns: repeat(3, 1fr);}
-    h1 {background-color: #853ed1;}}
+    h1 {background-color: #853ed1;}
+    .menu{display: none;}
+    .hamburger{display:none;}}
 
 
 
