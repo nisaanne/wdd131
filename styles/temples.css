@@ -50,8 +50,8 @@ nav a{
     background-color: aqua;}
 
 
-main{display:grid;
-    grid-template-columns: 1fr;
+.templepics{display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width:100%;
     justify-content: center;
 }
@@ -68,7 +68,19 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 20px 0; 
+    /* padding: 20px 0;  */
+}
+
+.heading-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100px;          /* Adjust height as needed */
+    background-color: #f0f0f0; /* Optional: Add background color */
+}
+
+.heading-section h2 {
+    text-align: center;     /* Centers text inside the h2 */
 }
 
 
