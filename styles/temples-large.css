@@ -3,6 +3,7 @@
     h1 {background-color: #853ed1;}
     .gallery{
         grid-template-columns: 1fr 1fr 1fr;} 
+    .hamburger{display:none;}
     .menu{display: none;
         transform: translateX(100%);}
     .menuItem{display:none;
