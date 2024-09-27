@@ -16,7 +16,7 @@
     background-color: #853ed1;
     color:white;
     margin:0px;
-    font-family: "roboto";
+    font-family: "roboto", Arial, Helvetica, sans-serif;
     font-weight: 400;}
 
     nav a:hover{background-color: rgb(12, 42, 161);}

@@ -1,5 +1,5 @@
 
-main{font-family: "dancing script";
+main{font-family: "dancing script",Arial, Helvetica, sans-serif;
     font-size: 2em;}
 
 .hamburger {
@@ -103,7 +103,7 @@ margin:1em;}
     position: absolute;
     top: 50px;
     left: 0;
-    font-family: "roboto";
+    font-family: "roboto", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: italic;
 }
