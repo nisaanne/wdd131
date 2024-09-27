@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-{var currentYear = new Date().getFullYear();
+ {var currentYear = new Date().getFullYear();
 
     document.getElementById('current-year').textContent = currentYear;
 
