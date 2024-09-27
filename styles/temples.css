@@ -1,5 +1,6 @@
 
-
+main{font-family: "dancing script";
+    font-size: 2em;}
 
 .hamburger {
     display: none;
@@ -102,6 +103,9 @@ margin:1em;}
     position: absolute;
     top: 50px;
     left: 0;
+    font-family: "roboto";
+    font-weight: 700;
+    font-style: italic;
 }
 
 .menu.active {
@@ -116,4 +120,5 @@ margin:1em;}
     border-bottom: 1px solid #fff;
 }
 
-.links{display:none;}
+.links{display:none;
+}
