@@ -1,5 +1,5 @@
-:root{--red: #ea1f1f;
-      --green: #29b756;
+:root{--red: rgb(194, 20, 20);
+      --green: rgb(31, 86, 25);
       --border: 1px solid rgba(0,0,0,.1);
     
     }
@@ -11,20 +11,19 @@
 }
 
 header, footer{
-    background-color: aqua;
-    color: rgb(194, 20, 20);
+    background-color: var(--green);
+    color: var(--red);
     text-align:center;
-    padding: 1.5rem;
+    padding: 2rem;
+    color: white;
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    
 }
 
-.aside{
-    background-color: blue;
-    padding: .5rem;
-}
 
 img{
     width: 100%;
@@ -33,6 +32,9 @@ img{
 
 h2{
     padding: 1rem;
+    background-color: rgb(233, 52, 25);
+    opacity: 1;
+    color: white;
 }
 
 .card{
@@ -82,14 +84,14 @@ padding: 1rem;
 
     .data{
         position:absolute;
-        top: 2rem;
-        left: 1rem;
+        top:-50rem;
+        left: 3rem;
     }
 
     .weather{
         position: absolute;
-        bottom: 2rem;
-        right: 1rem;
+        bottom: 5rem;
+        right:3rem;
     }
 
     .weather h2::after{

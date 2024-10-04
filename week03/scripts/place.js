@@ -13,7 +13,7 @@ function windchill(temp, speed){
 }
 
 let tempC = 10;
-let speed = 4;
+let speed = 5;
 if (tempC <= 10 && speed > 4.8){
     wcf.textContent = windchill(tempC, speed).toFixed(1);
 } else {wcf.textContent = 'N/A';
