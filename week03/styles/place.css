@@ -11,6 +11,7 @@
 }
 
 header, footer{
+    background-color: aqua;
     color: rgb(194, 20, 20);
     text-align:center;
     padding: 1.5rem;
