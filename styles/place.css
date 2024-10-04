@@ -80,7 +80,7 @@ padding: 1rem;
 
     .data{
         position:absolute;
-        top: 12rem;
+        top: 5rem;
         left: 5rem;
     }
 
@@ -88,7 +88,7 @@ padding: 1rem;
 
     .weather{
         position: absolute;
-        bottom: -20rem;
+        bottom: 10rem;
         right:5rem;
     }
 
