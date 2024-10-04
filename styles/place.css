@@ -63,6 +63,11 @@ padding: 1rem;
     font-size: .9rem;
 }
 
+.weathersvg{
+    display: grid;
+    justify-content: center;
+    padding:.5rem;}
+
 @media (min-width: 750px){
 
 
