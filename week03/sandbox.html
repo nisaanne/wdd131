@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="place website">
+    <title>Temple Album</title>
+    <meta name="description" content="lds temple album">
     <meta name="author" content="Venisa McAllister">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/placelarge.css">
-    <script defer src="place.js"></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/temples.js"></script>
 </head>
 <body>
-    <main>
-        <h1>Vancouver Island</h1>
-        <div class="hero">
-            <picture>
-                <img src="images/gardenslarge.webp" alt="mypic">
-            </picture>
-        </div>
-    </main>
-    <footer>
-        <p>© <span id="current-year"></span> 🌲 Venisa McAllister California, USA 🌊</p>
-        <p><span id="lastModified"></span></p>
-    </footer>
+<header>
+    <h1>Temple Album</h1>
+    <nav class="links">
+        <a href="#">Home</a> |
+        <a href="#">Old</a> |
+        <a href="#">New</a> |
+        <a href="#">Large</a> |
+        <a href="#">Small</a>
+    </nav>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu">☰</button>
+    <ul id="nav-menu" class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Old</a></li>
+        <li><a class="menuItem" href="#">New</a></li>
+        <li><a class="menuItem" href="#">Large</a></li>
+        <li><a class="menuItem" href="#">Small</a></li>
+    </ul>
+</header>
+<main>
+    <section class="heading-section">
+        <h2>Home</h2>
+    </section>
+    <div class="gallery">
+        <figure>
+            <img src="images/featherriversmall.jpg" alt="mypic">
+            <figcaption>Temple</figcaption>
+        </figure>
+        <!-- Repeat the figure block as needed -->
+    </div>
+</main>
+<footer>
+    <p>&copy; <span id="current-year"></span> &#127794; Venisa McAllister, California, USA &#x1F30A;</p>
+    <p><span id="lastModified"></span></p>
+</footer>
 </body>
 </html>
