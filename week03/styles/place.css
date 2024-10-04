@@ -74,7 +74,7 @@ padding: 1rem;
     
     .card{
         border: var(--border);
-        box-shadow: 0 0 2rem #000;
+        box-shadow: 0 0 2rem black;
         opacity: .8;
     }
 
@@ -84,14 +84,16 @@ padding: 1rem;
 
     .data{
         position:absolute;
-        top:-50rem;
-        left: 3rem;
+        top: 12rem;
+        left: 5rem;
     }
+
+    svg{display: none;}
 
     .weather{
         position: absolute;
-        bottom: 5rem;
-        right:3rem;
+        bottom: -20rem;
+        right:5rem;
     }
 
     .weather h2::after{
