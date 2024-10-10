@@ -107,7 +107,7 @@ const temples = [
 
 createTempleCard(temples);
 
-const hometemplesLink = document.querySelector("#home");
+const hometemplesLink = document.querySelector("#home-link");
 
 hometemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.dedicated > "1800"));
@@ -115,7 +115,7 @@ hometemplesLink.addEventListener("click", () => {
 
 createTempleCard(temples);
 
-const oldtemplesLink = document.querySelector("#old");
+const oldtemplesLink = document.querySelector("#old-link");
 
 oldtemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.dedicated < "2000"));
@@ -123,7 +123,7 @@ oldtemplesLink.addEventListener("click", () => {
 
 createTempleCard(temples);
 
-const newtemplesLink = document.querySelector("#new");
+const newtemplesLink = document.querySelector("#new-link");
 
 newtemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
@@ -131,7 +131,7 @@ newtemplesLink.addEventListener("click", () => {
 
 createTempleCard(temples);
 
-const largetemplesLink = document.querySelector("#large");
+const largetemplesLink = document.querySelector("#large-link");
 
 largetemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.area > "90000"));
@@ -139,11 +139,32 @@ largetemplesLink.addEventListener("click", () => {
 
 createTempleCard(temples);
 
-const smalltemplesLink = document.querySelector("#small");
+const smalltemplesLink = document.querySelector("#small-link");
 
 smalltemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.area < "10000"));
 });
+
+document.querySelector("#home-menu").addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated > "1800"));
+});
+
+document.querySelector("#old-menu").addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated < "2000"));
+});
+
+document.querySelector("#new-menu").addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
+});
+
+document.querySelector("#large-menu").addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area > "90000"));
+});
+
+document.querySelector("#small-menu").addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < "10000"));
+});
+
 
 
 function createTempleCard(filteredTemples) {
