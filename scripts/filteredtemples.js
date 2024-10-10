@@ -126,6 +126,14 @@ largetemplesLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.area > "90000"));
 });
 
+createTempleCard(temples);  
+
+const smalltemplesLink = document.querySelector("#small");
+  
+smalltemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < "10000"));
+});
+
   
   function createTempleCard(filteredTemples) {
     document.querySelector(".gallary").innerHTML = "";
