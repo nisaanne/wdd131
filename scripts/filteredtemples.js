@@ -104,6 +104,14 @@ hamburger.addEventListener('click', () => {
 
 createTempleCard(temples);  
 
+const hometemplesLink = document.querySelector("#home");
+  
+hometemplesLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated > "1800"));
+})
+
+createTempleCard(temples);  
+
 const oldtemplesLink = document.querySelector("#old");
   
 oldtemplesLink.addEventListener("click", () => {
