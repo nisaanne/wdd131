@@ -9,17 +9,17 @@ chaptersArray.forEach(chapter => {
 
 button.addEventListener('click', function () {
     let inputValue = input.value.trim();
-    if (inputValue === '') {
+    if (input.value.trim() !== '') {
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = '';
+        input.focus();
+    }
+    else {
         alert('Input cannot be blank!');
         input.focus();
-        return;
     }
-
-    displayList(input.value);
-    chaptersArray.push(input.value);
-    setChapterList();
-    input.value = '';
-    input.focus();
 });
 
 function displayList(item) {
@@ -35,6 +35,8 @@ function displayList(item) {
         list.removeChild(li);
         deleteChapter(li.textContent);
         input.focus();
+
+
     });
 }
 
@@ -51,3 +53,4 @@ function setChapterList() {
 function getChapterList() {
     return JSON.parse(localStorage.getItem('myFavBOMList'));
 }
+
