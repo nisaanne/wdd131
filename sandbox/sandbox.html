@@ -3,119 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <style>
-        /* Add any necessary styles here */
-        body {
-            font-family: "Roboto", Arial, Helvetica, sans-serif;
-            background-color: #c5cbe4;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 1rem;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin: 0.5rem 0 0.2rem;
-        }
-        input[type="text"], input[type="date"], textarea, select {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        input[type="radio"], input[type="checkbox"] {
-            margin-right: 0.5rem;
-        }
-        input[type="submit"] {
-            display: block;
-            width: 100%;
-            padding: 1rem;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #c5cbe4;
-            color: white;
-        }
-    </style>
+    <meta name="description" content="product review">
+    <meta name="author" content="Venisa McAllister">
+    <title>Product Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+    
 </head>
 <body>
-    <form method="get" action="review.html">
-        <h1>Product Review</h1>
-
-        <label for="productName">Product Name</label>
-        <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <script>
-                const products = [
-                    { name: "Product 1" },
-                    { name: "Product 2" },
-                    { name: "Product 3" }
-                ];
-
-                products.forEach(product => {
-                    const option = document.createElement("option");
-                    option.value = product.name;
-                    option.textContent = product.name;
-                    document.getElementById("productName").appendChild(option);
-                });
-            </script>
-        </select>
-
-        <label>Overall Rating</label>
-        <div>
-            <input type="radio" id="star1" name="rating" value="1" required>
-            <label for="star1">☆</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">☆☆</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">☆☆☆</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">☆☆☆☆</label>
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">☆☆☆☆☆</label>
-        </div>
-
-        <label for="installDate">Date of Installation</label>
-        <input type="date" id="installDate" name="installDate" required>
-
-        <label>Useful Features</label>
-        <div>
-            <input type="checkbox" id="feature1" name="features" value="Feature 1">
-            <label for="feature1">Feature 1</label>
-            <input type="checkbox" id="feature2" name="features" value="Feature 2">
-            <label for="feature2">Feature 2</label>
-            <input type="checkbox" id="feature3" name="features" value="Feature 3">
-            <label for="feature3">Feature 3</label>
-        </div>
-
-        <label for="review">Written Review</label>
-        <textarea id="review" name="review"></textarea>
-
-        <label for="username">User Name</label>
-        <input type="text" id="username" name="username">
-
-        <input type="submit" value="Submit Review">
-    </form>
-
+    <header></header>
+    <main>                  
+        <form method="get" action="review.html" class="wf1">
+            <h1>Product Review</h1>
+            <div>
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a product &#9662;</option>
+                    <option value="fc-1888">flux capacitor</option>
+                    <option value="fc-2050">power laces</option>
+                    <option value="fs-1987">time circuits</option>
+                    <option value="ac-2000">low voltage reactor</option>
+                    <option value="jj-1969">warp equalizer</option>
+                </select>
+            </div>
+            <div>
+                <label>Overall Rating:</label>
+            </div>
+            <div class="details">
+                <label for="onestar"><input type="radio" name="rating" id="onestar" value="1" required>&#9734;</label>
+                <label for="twostar"><input type="radio" name="rating" id="twostar" value="2" required>&#9734;&#9734;</label>
+                <label for="threestar"><input type="radio" name="rating" id="threestar" value="3" required>&#9734;&#9734;&#9734;</label>
+                <label for="fourstar"><input type="radio" name="rating" id="fourstar" value="4" required>&#9734;&#9734;&#9734;&#9734;</label>
+                <label for="fivestar"><input type="radio" name="rating" id="fivestar" value="5" required>&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+            </div>
+            <div>
+                <label for="pickdate">Completion Date:</label>
+                <input type="date" name="CompleteDate" id="pickdate" required>
+            </div>
+            <div>Useful Features:</div>
+            <div>
+                <label for="checkbox1"><input type="checkbox" id="checkbox1" name="editing" value="yes"> Durability</label>
+                <label for="checkbox2"><input type="checkbox" id="checkbox2" name="code" value="yes"> Ease of Use</label>
+                <label for="checkbox3"><input type="checkbox" id="checkbox3" name="process" value="yes"> Performance</label>
+                <label for="checkbox4"><input type="checkbox" id="checkbox4" name="Client" value="yes"> Design</label>
+            </div>
+            <div>
+                <label for="review1">Written Review (optional):</label>
+                <textarea id="review1" name="custreview" rows="4" cols="40"></textarea>
+            </div>
+            <div>
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="name">
+            </div>
+            <div>
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
     <footer>
-        &copy; 2024 Your School. All rights reserved.
+        <p>&copy; <span id="current-year"></span>         &#127794;Venisa McAllister California, USA &#x1F30A;</p>
+        <p><span id="lastModified"></span>
     </footer>
 </body>
 </html>
