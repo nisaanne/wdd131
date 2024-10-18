@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+       
+        <form method="get" action = "review.html" class="wf1">
+            <h1>Product Review</h1>
+
+            <div>
+            <label>Product Name:</label>
+                <select id="productName" name="productName" required>
+                <option value disabled selected="Please Select">Select a product &#9662;</option>
+                <option value="fc-1888">flux capacitor</option>
+                <option value="fc-2050">power laces</option>
+                <option value="fs-1987">time circuits</option>
+                <option value="ac-2000">low voltage reactor</option>
+                <option value="jj-1969">warp equalizer</option>
+                </select>
+            </div>
+            <div>
+                <label>Overall Rating:</label>
+            </div>
+            <div class="details">
+                <label><input type="radio" name="rating" id= "onestar" required>&#9734;</label>
+                <label><input type="radio" name="rating" id= "twostar" required>&#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id= "threestar" required>&#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id= "fourstar" required>&#9734;&#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id= "fivestar" required>&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+            </div>
+            <div>
+                <label>Completion Date <input type="date" name="CompleteDate" id=pickdate required></label>  
+            </div>
+            <div>Useful Features:</div>
+            <div>
+            <label><input type="checkbox" id= "checkbox1" name="editing" value="yes"> Durability</label>
+            <label><input type="checkbox" id= "checkbox2" name="code" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id= "checkbox3" name="process" value="yes"> Performance</label>
+            <label><input type="checkbox" id= "checkbox4" name="Client" value="yes"> Design</label>
+            </div>
+            <div>
+            <label for="writtenreview">Written Review(optional):</label>
+            </div>
+            <div>
+            <textarea id="review1" name="custreview" rows="4" cols="50">
+            </textarea>    
+            </div>
+            <div>
+            <label>Name: <input type="text" id= username name="name"></label>
+            </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,59 +1,121 @@
-window.onload = function() {
-  const temples = [
-      {dedicated: "1999", area: 50000},
-      {dedicated: "2001", area: 120000}
-  ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <style>
+        /* Add any necessary styles here */
+        body {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            background-color: #c5cbe4;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        input[type="text"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #c5cbe4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="review.html">
+        <h1>Product Review</h1>
 
-  function createTempleCard(temples) {
-      console.log("Creating temple card for:", temples);
-  }
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <script>
+                const products = [
+                    { name: "Product 1" },
+                    { name: "Product 2" },
+                    { name: "Product 3" }
+                ];
 
-  const hometemplesLink = document.querySelector("#home");
-  hometemplesLink.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated > "1800"));
-  });
+                products.forEach(product => {
+                    const option = document.createElement("option");
+                    option.value = product.name;
+                    option.textContent = product.name;
+                    document.getElementById("productName").appendChild(option);
+                });
+            </script>
+        </select>
 
-  const oldtemplesLink = document.querySelector("#old");
-  oldtemplesLink.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated < "2000"));
-  });
+        <label>Overall Rating</label>
+        <div>
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">☆</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">☆☆</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">☆☆☆</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">☆☆☆☆</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">☆☆☆☆☆</label>
+        </div>
 
-  const newtemplesLink = document.querySelector("#new");
-  newtemplesLink.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
-  });
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
 
-  const largetemplesLink = document.querySelector("#large");
-  largetemplesLink.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area > "90000"));
-  });
+        <label>Useful Features</label>
+        <div>
+            <input type="checkbox" id="feature1" name="features" value="Feature 1">
+            <label for="feature1">Feature 1</label>
+            <input type="checkbox" id="feature2" name="features" value="Feature 2">
+            <label for="feature2">Feature 2</label>
+            <input type="checkbox" id="feature3" name="features" value="Feature 3">
+            <label for="feature3">Feature 3</label>
+        </div>
 
-  const smalltemplesLink = document.querySelector("#small");
-  smalltemplesLink.addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area < "10000"));
-  });
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review"></textarea>
 
-  // Event listeners for hamburger menu items
-  document.querySelector("#home-menu").addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated > "1800"));
-  });
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username">
 
-  document.querySelector("#old-menu").addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated < "2000"));
-  });
+        <input type="submit" value="Submit Review">
+    </form>
 
-  document.querySelector("#new-menu").addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.dedicated >= "2000"));
-  });
-
-  document.querySelector("#large-menu").addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area > "90000"));
-  });
-
-  document.querySelector("#small-menu").addEventListener("click", () => {
-      createTempleCard(temples.filter(temple => temple.area < "10000"));
-  });
-
-  // Initial creation of temple cards
-  createTempleCard(temples);
-};
+    <footer>
+        &copy; 2024 Your School. All rights reserved.
+    </footer>
+</body>
+</html>
