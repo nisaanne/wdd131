@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+main{font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color:White}
+
+h1{display:flex;
+    justify-content: left;
+    align-items: center;
+    color:rgb(144, 18, 228);
+    font-family: "Mr Dafoe";
+    font-weight: 100;
+    font-size: 4em;
+    background-color:#c5cbe4;
+    padding: 2rem;
+    margin:0rem;
+    border-bottom: .1em solid rgb(31, 73, 243);}
+
+h2{font-family: "Roboto";
+   padding:.5em;
+   color: black;}
+
+p{padding: .5em;}
+
+picture{display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items:center;
+margin: 2em;
+}
+
+
+footer{background-color: #c5cbe4;
+    display:grid;
+    grid-template-rows: 5rem;
+    justify-content: center;
+    color:white;}
