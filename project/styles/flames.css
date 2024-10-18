@@ -26,11 +26,11 @@ h2{font-family: "Roboto";
 
 p{padding: .5em;}
 
-picture{display: grid;
+/* picture{display: grid;
 grid-template-columns: 1fr;
 justify-items:center;
 margin: 2em;
-}
+} */
 
 
 footer{background-color: #c5cbe4;
