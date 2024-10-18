@@ -27,7 +27,7 @@ h2{font-family: "Roboto";
 
 p{padding: .5em;}
 
-picture{display: grid;
+div{display: grid;
 grid-template-columns: 1fr;
 justify-items:center;
 margin: 2em;
