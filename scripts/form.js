@@ -30,15 +30,38 @@
         }
       ];
       
-      const productList = document.getElementById("product_name");
+      
+       
+ 
+        // Populate the select options
+        const productList = document.getElementById("product_name");
+        products.forEach(product => {
+            const option = document.createElement("option");
+            option.value = product.id;
+            option.textContent = product.name;
+            productList.appendChild(option);
+        });
+    
+        
+        if (localStorage.getItem('reviewCount')) {
+            let reviewCount = parseInt(localStorage.getItem('reviewCount'));
+            document.getElementById('review-count').textContent = 'You have submitted ' + reviewCount + ' review(s).';
+        } else {
+            localStorage.setItem('reviewCount', 0);
+            document.getElementById('review-count').textContent = 'You have submitted 0 review(s).';
+        }
+    
+           document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let reviewCount = parseInt(localStorage.getItem('reviewCount')) + 1;
+            localStorage.setItem('reviewCount', reviewCount);
+            document.getElementById('review-count').textContent = 'You have submitted ' + reviewCount + ' review(s).';
+            alert('Review submitted successfully!');
+        });
+    
+    
 
-  document.addEventListener("DOMContentLoaded", function() {
-    products.forEach(product => {
-          const option = document.createElement("option");
-          option.value = product.id; 
-          option.textContent = product.name; 
-          productList.appendChild(option);
-      });
-  });
+    
+   
 
-  
+

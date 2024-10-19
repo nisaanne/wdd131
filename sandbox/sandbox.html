@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link href="styles/form.css" rel="stylesheet">
     <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/review.js"></script> <!-- Include script to handle the counter -->
 </head>
 <body>
     <header></header>
     <main>
-        <form method="get" action="review.html" class="wf1">
+        <form id="reviewForm" class="wf1">
             <h1>Product Review</h1>
             <div>
                 <label for="product_name">Product Name</label>
@@ -46,6 +47,8 @@
             </div>
             <div>
                 <label for="review1">Written Review (optional):</label>
+            </div>
+            <div>
                 <textarea id="review1" name="custreview" rows="4" cols="40"></textarea>
             </div>
             <div>
@@ -56,6 +59,7 @@
                 <input type="submit" value="Post Review">
             </div>
         </form>
+        <p id="review-count"></p> <!-- Element to display review count -->
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> &#127794; Venisa McAllister California, USA &#x1F30A;</p>
