@@ -9,7 +9,9 @@ body {
 
 
 form.wf1 {
-    width: 100%;
+    width: 90%;  /* Adjusts form to fit within screen */
+    max-width: 600px;  /* Keeps form from being too wide on larger screens */
+    margin: 0 auto;  
     background-color: rgb(61, 165, 250);
     padding: 20px;
     border-radius: 10px;
@@ -17,11 +19,13 @@ form.wf1 {
 }
 
 footer {
+    width: 90%;
     max-width: 28rem; 
     background-color: rgb(153, 202, 242);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
 }
 
 div {
