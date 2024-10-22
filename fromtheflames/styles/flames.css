@@ -1,6 +1,7 @@
 
 
 .links {
+    position:relative;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -8,6 +9,35 @@
 }
 
 .hero img{width:500px;}
+
+h1{display:flex;
+    justify-content: left;
+    align-items: center;
+    color:rgb(144, 18, 228);
+    font-family: "Mr Dafoe";
+    font-weight: 100;
+    font-size: 4em;
+    background-color:#c5cbe4;
+    padding: 2rem;
+    margin:0rem;
+    border-bottom: .1em solid rgb(31, 73, 243);}
+
+footer{background-color: #c5cbe4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    color:white;
+    }
+
+a{  position:absolute;
+    background-color: white;
+    padding: 1rem;
+    color:rgb(31, 73, 243);
+    
+}
+
 
 
 
