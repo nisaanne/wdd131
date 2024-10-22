@@ -4,7 +4,8 @@
         grid-template-columns: 1fr 1fr;
         }
 
-    .links img{margin:2em;
+    .links img{margin:.25em;
     }
 
+.hero img{width:1200px;}
 }

@@ -1,13 +1,13 @@
-.hero{
-    max-width: 90%;
-    
+
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
-.links{
-    display:grid;
-    justify-items: center;
-    padding: 2em;}
+.hero img{width:500px;}
 
-.links img{
-    justify-items: center;
-}
+
+
