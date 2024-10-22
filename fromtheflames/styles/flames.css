@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .links {
     position:relative;
@@ -12,6 +16,7 @@
 width: 90%; 
 max-width: 1200px; 
 margin: 0 auto;
+
 }
 
 h1{display:flex;
