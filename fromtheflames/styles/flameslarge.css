@@ -1,0 +1,10 @@
+
+@media (min-width: 768px) {
+    .links {
+        grid-template-columns: 1fr 1fr;
+        }
+
+    .links img{margin:2em;
+    }
+
+}
