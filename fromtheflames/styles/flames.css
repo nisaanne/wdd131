@@ -47,18 +47,18 @@ header,footer{background-color: #c5cbe4;
     }
 
 a{position:absolute;
-    background-color: white;
+    background-color: rgb(204, 210, 212);
     padding: 1rem;
     color:rgb(31, 73, 243);
+    font-weight: bolder;
     
 }
 
 .header-container {
     width: 100%;
-    background-color: #c5cbe4;
+    background-color: #e2e4ec;
     border-bottom: .1em solid rgb(31, 73, 243);
 }
-
 
 
 
