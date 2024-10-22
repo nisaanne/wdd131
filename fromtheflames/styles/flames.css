@@ -35,6 +35,7 @@ footer{background-color: #c5cbe4;
     text-align: center;
     padding: 1em;
     color:white;
+    max-width: 1200px;
     }
 
 a{  position:absolute;
