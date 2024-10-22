@@ -12,6 +12,11 @@
     align-items: center;
 }
 
+figure {
+    width: 100%;
+    max-width: 400px;
+    margin: auto; /* Centers the image within its container */
+}
 
 .hero img{
     width: 100%;
