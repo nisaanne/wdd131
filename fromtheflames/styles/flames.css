@@ -73,6 +73,7 @@ footer{margin-top: 2em;}
     max-width: 1200px;
     margin: auto;
     padding: 1em;
+    width: 100%;
 }
 .header-container img{
     margin-right: 1em;
