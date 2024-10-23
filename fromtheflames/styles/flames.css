@@ -38,6 +38,7 @@ figure {
 .hero img {
     width: 100%;
     height: auto;
+    margin-bottom: 3em;
 }
 
 h1 {
@@ -54,6 +55,8 @@ h1 {
     width: 100%;
     
 }
+
+
 
 header, footer {
     background-color: var(--grey);
@@ -75,10 +78,10 @@ footer{margin-top: 2em;}
     margin-right: 1em;
 }
 
-a {
+figure a {
     position: absolute;
-    background-color: --grey;
-    padding: 1rem;
+    background-color: var(--grey);
+    padding: rem;
     color: rgb(31, 73, 243);
     font-weight: bolder;
 }
