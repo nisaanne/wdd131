@@ -32,7 +32,7 @@ body {
 figure {
     width: 100%;
     max-width: 400px;
-    margin: auto; /* Centers the image within its container */
+    margin: auto; 
 }
 
 .hero img {
@@ -103,8 +103,8 @@ figure a {
     font-style: italic;}
 
     form.wf1 {
-        width: 90%;  /* Adjusts form to fit within screen */
-        max-width: 600px;  /* Keeps form from being too wide on larger screens */
+        width: 90%;  
+        max-width: 600px;  
         margin: 0 auto;  
         background-color: rgb(61, 165, 250);
         padding: 20px;
@@ -115,10 +115,10 @@ figure a {
     .signup {
         background-color: white;
         padding: 0;
-        text-align: center; /* Centers the text inside the div */
+        text-align: center; 
         display: flex;
-        justify-content: center; /* Centers the div itself */
-        align-items: center; /* Centers the content vertically (if needed) */
+        justify-content: center; 
+        align-items: center; 
     }
 
     .sign-up input[type="submit"] {
@@ -142,6 +142,14 @@ figure a {
     }
 
     .text input[type=text]{padding: .5em;}
+
+    .classes p {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%; /* Adjust the percentage as needed */
+    }
+    
+    
 
 
 
