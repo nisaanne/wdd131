@@ -149,6 +149,26 @@ figure a {
         max-width: 80%; /* Adjust the percentage as needed */
     }
     
+    nav {
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        gap: 1rem; /* Add space between the links */
+    }
+    
+    nav a {
+        text-decoration: none; /* Remove underline */
+        color: rgb(31, 73, 243); /* Color the links */
+        font-weight: bold; /* Make the links bold */
+        padding: 0.5rem; /* Add some padding for better click area */
+        background-color: white; /* White background for the links */
+        border-radius: 4px; /* Optional: add rounded corners */
+        border: 2px solid rgb(31, 73, 243); /* Optional: add a blue border */
+    }
+    
+    nav a:hover {
+        background-color: rgb(31, 73, 243); /* Change background color on hover */
+        color: white; /* Change text color on hover */
+    }
     
 
 
