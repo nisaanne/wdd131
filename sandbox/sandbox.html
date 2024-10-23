@@ -10,26 +10,51 @@
     <link rel="stylesheet" href="styles/flameslarge.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script defer src="scripts/flames.js"></script>
 </head>
 <body>
     <header>
-        <h1>From the Flames</h1>
+        <div class="header-container">
+            <h1>From the Flames</h1>
+        </div>
+        <nav class="links">
+            <a href="">Home</a> |
+            <a href="">Old</a> |
+            <a href="">New</a> |
+            <a href="">Large</a> |
+            <a href="">Small</a>
+        </nav>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">☰</button>
+        <ul id="nav-menu" class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Old</a></li>
+            <li><a class="menuItem" href="#">New</a></li>
+            <li><a class="menuItem" href="#">Large</a></li>
+            <li><a class="menuItem" href="#">Small</a></li>
+        </ul>
+    </header>
+    <main>
         <div class="hero">
             <picture>
                 <source srcset="images/upcloselarge.webp" media="(min-width: 768px)">
-                <img src="images/upclosesmall.webp" alt="torchworker">
+                <img src="images/upclosesmall.webp" alt="flameworkerhands" width="1200">
             </picture>
         </div>
         <div class="links">
-            <img src="images/marblesx.webp" alt="torchworker">
-            <img src="images/glassheartx.webp" alt="torchworker">
+            <figure>
+                <a href="https://nisaanne.github.io/wdd131/fromtheflames/classes">Classes</a>
+                <img src="images/marblesx.webp" alt="marbles" width="400">
+            </figure>
+            <figure>
+                <a href="https://nisaanne.github.io/wdd131/fromtheflames/gallery">Gallery</a>
+                <img src="images/glassheartx.webp" alt="heart" width="400">
+            </figure>
         </div>
-    </header>
-    <main>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; <span id="current-year"></span> &#127794;Venisa McAllister California, USA &#x1F30A;</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
-

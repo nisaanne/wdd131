@@ -1,11 +1,23 @@
-*{
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.full-width{
+    width: 100%;
+    border-bottom: 0.5em solid rgb(31, 73, 243);
+    background-color: #c5cbe4;
+    margin: 0;
+    padding: 0;
+}
 .links {
-    position:relative;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -18,47 +30,70 @@ figure {
     margin: auto; /* Centers the image within its container */
 }
 
-.hero img{
+.hero img {
     width: 100%;
     height: auto;
 }
 
-
-h1{display:flex;
+h1 {
+    display: flex;
     justify-content: left;
     align-items: center;
-    color:rgb(144, 18, 228);
+    color: rgb(144, 18, 228);
     font-family: "Mr Dafoe";
     font-weight: 100;
     font-size: 4em;
-    background-color:#c5cbe4;
+    background-color: #c5cbe4;
     padding: 2rem;
-    margin:0rem;
-    border-bottom: .1em solid rgb(31, 73, 243);}
-
-header,footer{background-color: #c5cbe4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-    color:white;
-    max-width: 1200px;
-    }
-
-a{position:absolute;
-    background-color: rgb(204, 210, 212);
-    padding: 1rem;
-    color:rgb(31, 73, 243);
-    font-weight: bolder;
+    margin: 0;
+    width: 100%;
     
 }
 
-.header-container {
+header, footer {
+    background-color: #c5cbe4;
     width: 100%;
-    background-color: #e2e4ec;
-    border-bottom: .1em solid rgb(31, 73, 243);
 }
+
+.header-container, .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+.header-container img{
+    margin-right: 1em;
+}
+
+a {
+    position: absolute;
+    background-color: rgb(204, 210, 212);
+    padding: 1rem;
+    color: rgb(31, 73, 243);
+    font-weight: bolder;
+}
+
+.classes{position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;}
+
+.classes img{
+    justify-self: center;
+    padding: 2em;
+}
+
+.classes h2{text-align: center;
+    font-size: 4em;
+    font-weight: lighter;
+    font-style: italic;}
+
+
+
 
 
 

@@ -1,11 +1,43 @@
-
 @media (min-width: 768px) {
     .links {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        }
-
-    .links img{margin:.25em;
+        gap: 1em; /* Optional: adds space between items */
+      
     }
 
-.hero img{width:1200px;}
+    .links img {
+        margin: 0.25em;
+    }
+
+    .classes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em; /* Optional: adds space between items */
+      
+    }
+
+    .classes p, classes img {
+        width:100%;
+        margin: 0.25em;
+    }
+
+    .classes h2{
+        grid-column: span 2;
+    }
+
+    .hero img {
+        max-width: 100%; /* Allows the image to be responsive */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    header {
+        padding: 2em;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+    }
 }
+
