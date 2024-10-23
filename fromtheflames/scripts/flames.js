@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('current-year').textContent = currentYear;
 
     // Form submission handler
-    document.getElementById('reviewForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+    document.getElementById('reviewForm').addEventListener('submit', function(e) 
+    {e.preventDefault();
 
         const date = document.getElementById('pickdate').value;
         const name = document.getElementById('username').value;
