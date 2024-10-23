@@ -81,7 +81,7 @@ footer{margin-top: 2em;}
 figure a {
     position: absolute;
     background-color: var(--grey);
-    padding: rem;
+    padding: 1rem;
     color: rgb(31, 73, 243);
     font-weight: bolder;
 }
