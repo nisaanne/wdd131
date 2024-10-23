@@ -134,7 +134,11 @@ a {
         padding: .5em;
     }
 
+    .text{
+        padding: .5em;
+    }
 
+    .text input[type=text]{padding: .5em;}
 
 
 
