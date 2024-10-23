@@ -16,7 +16,7 @@ body {
 
 .full-width{
     width: 100%;
-    border-bottom: 0.5em solid --blue;
+    border-bottom: 0.5em solid var(--blue);
     background-color: var(--grey);
     margin: 0;
     padding: 0;
