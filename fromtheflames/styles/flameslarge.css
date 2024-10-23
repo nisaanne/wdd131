@@ -2,7 +2,7 @@
     .links {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em; /* Optional: adds space between items */
+        gap: 1em; 
       
     }
 
@@ -13,7 +13,7 @@
     .classes {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em; /* Optional: adds space between items */
+        gap: 1em; 
       
     }
 
@@ -27,8 +27,8 @@
     }
 
     .hero img {
-        max-width: 100%; /* Allows the image to be responsive */
-        height: auto; /* Maintains aspect ratio */
+        max-width: 100%; 
+        height: auto; 
     }
 
     header {
