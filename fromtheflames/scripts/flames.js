@@ -8,7 +8,7 @@
 document.getElementById('reviewForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-       const date = document.getElementById('pickdate').value;
+    const date = document.getElementById('pickdate').value;
     const name = document.getElementById('username').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
