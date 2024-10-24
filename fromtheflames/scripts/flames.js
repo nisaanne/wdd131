@@ -31,12 +31,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 return;
             }
     
-            alert('Form data is valid!');
-            document.getElementById('signupform').submit();
+            // Create an array to store data
+            let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    
+            // Add new form data to array
+            formData.push({ date, name, phone, email });
+    
+            // Save array to local storage
+            localStorage.setItem('formData', JSON.stringify(formData));
+    
+            alert('Form data saved!');
+            document.getElementById('signupform').reset();
         });
     });
 })
-    
-   
-
-       
