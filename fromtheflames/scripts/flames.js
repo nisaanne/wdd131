@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('signupform').addEventListener('submit', function(event) {
             event.preventDefault();
     
-            // Get form values
+            
             const date = document.getElementById('pickdate').value;
             const name = document.getElementById('username').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
     
-            // Simple form validation
+           
             if (!date) {
                 alert('Please choose a date.');
                 return;
@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 return;
             }
     
-            // Create an array to store data
+            
             let formData = JSON.parse(localStorage.getItem('formData')) || [];
     
-            // Add new form data to array
+            
             formData.push({ date, name, phone, email });
     
-            // Save array to local storage
+            
             localStorage.setItem('formData', JSON.stringify(formData));
     
             alert('Form data saved!');
